@@ -1,0 +1,34 @@
+.wrapper
+  = render "shared/side_bar"
+  = render "main_chat"
+
+
+.right-group
+  .right-group__name
+    group-name 
+    .right-group__name-edit
+      = link_to "#" do
+        Edit
+    .right-group__name-user
+      group-user
+  .right-group__text
+    .right-group__text-name
+      name
+    .right-group__text-date
+      date
+    .right-group__text-massage
+      message
+    .right-group__text-name
+      name
+    .right-group__text-date
+      date
+    .right-group__text-massage
+      message
+  .right-group__form
+    %form.new_message
+      .right-group__form-form
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit",class: "submit-btn",value: "SEND"}

@@ -1,0 +1,144 @@
+.left-bar {
+  height: 100vh;
+  width: 300px;
+  float: left;
+  &__up {
+    height: 100px;
+    background-color: hsl(214, 27%, 20%);
+    display: flex;
+    align-items: center;
+    &--name{
+      color: white;
+      height: 20px;
+      width: 260px;
+      margin: 0 20px;
+    }
+     .icon1{
+       color:#ffffff;
+       position: relative;
+       right: 40px;
+     }
+     .icon{
+      color: #ffffff;
+      position: relative;
+      right: 30px;
+     }
+  }
+    &__down {
+      height: calc(100vh - 100px);
+      background-color: #2f3e51;
+      &--group {
+        color: #ffffff;
+        font-family: bold;
+        height: 91px;
+        padding-top:20px;
+        margin: 0 20px;
+
+        &--text {
+          color: #ffffff;
+          font-family: bold;
+          height: 11px;
+          margin-bottom: 40px;
+          margin-top: 5px;
+        }
+      }
+    }
+  
+}
+.right-group {
+  height: 100vh;
+  width: calc(100vw - 300px);
+  flex-direction: column;
+  display: flex;
+  &__name {
+    height: 100px;
+    width: calc(100vw - 300px);
+    background-color:#ffffff;
+    box-sizing: border-box;
+    padding: 25px 40px;
+    font-size: 20px;
+    float:right;
+    vertical-align: -50%;
+  &-edit{
+    font-size: 16px;
+    color: #38aef0;
+    width: 72px;
+    float:right;
+    border: solid;
+    text-align: center;
+    padding: 10px; 
+    vertical-align: -50px;
+    }
+    }
+    &__name-user{
+      color: #999999;
+      height: 20px;
+      font-size:12px;
+      position: absolute;
+      top: 80px;
+      font-size: 12px;
+    }
+  
+  
+  &__text {
+    height: calc(100vh - 190px);
+    width: calc(100vw - 300px);
+    background-color:#fafafa;
+    float: right;
+    position: relative;
+    &-name{
+       position: absolute;
+       padding-top: 35px ;
+       margin: 0 40px;
+       color: #333333;
+       font-size: 16px;
+    }
+      &-date{
+        padding-top: 35px ;
+        margin: 0px 40px 0px 150px;
+        color: #999999;
+        font-size: 12px;
+        
+      }
+      &-massage{
+        margin: 12px 0px 0px 40px;
+        padding-bottom: 46px;
+      }
+  }
+  &__form{
+    height: 90px;
+    width: calc(100vw - 300px);
+    background-color:#d2d2d2;
+    .submit-btn{
+      background-color: #38aef0;
+      height: 30px;
+      color: #fafafa;
+      height:50px;
+      width: 100px;
+      position: absolute;
+      bottom:20px;
+      right:40px;
+    }
+    &-form{
+      float: left;
+      height:30px;
+      
+      .input-box__text{
+        height: 50px;
+        width: 930px;
+        margin: 20px 20px;
+        position: relative;
+      }
+      .input-box__image{
+        position: absolute;
+        right: 165px;
+        bottom:30px;
+      }
+      .input-box__image__file{
+        display: none;
+      }
+    
+      
+  }
+ }
+}
